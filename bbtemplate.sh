@@ -9,14 +9,13 @@ crafty=crafty/
 
 for theFile in "$@"
 do
-    sudo touch ${rep}${view}${theFile}.view.js
-    sudo touch ${rep}${model}${theFile}.model.js
-    sudo touch ${rep}${crafty}${theFile}.crafty.js
-    sudo touch ${rep}${collection}${theFile}.collection.js
+     touch ${rep}${view}${theFile}.view.js
+     touch ${rep}${model}${theFile}.model.js
+     touch ${rep}${crafty}${theFile}.crafty.js
+     touch ${rep}${collection}${theFile}.collection.js
 done
 
-sudo echo "****************************************"
-sudo echo "files creates, writing process now"
-sudo echo "       ***     ***   ***   ***   ***    "
+ echo "****************************************"
+ echo "files creates, writing process now"
+ echo "       ***     ***   ***   ***   ***    "
 
-#sudo chmod 777  ${rep}${view}${theFile}.js

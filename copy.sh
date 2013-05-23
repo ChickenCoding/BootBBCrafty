@@ -1,34 +1,36 @@
 #!/usr/bin/env bash
 
-sudo cp -r /var/www/gameDevGrunt/*  $1
-sudo echo $1
+ cp -r /var/www/gameDevGrunt/*  $1
+ echo $1
 cd $1
 
-sudo npm install -g grunt-cli grunt
-sudo npm init
+ npm install -g grunt-cli grunt
+ npm init
 
-sudo touch Gruntfile.js
-
-cd $1
-sudo bash makeDevDir.sh
+ touch Gruntfile.js
 
 cd $1
-sudo bash bbtemplate.sh "game"
+
+ bash makeDevDir.sh
+bash installGruntModules.sh
 
 cd $1
-sudo perl createTpl.pl "game"
+ bash bbtemplate.sh "game"
+
+cd $1
+ perl createTpl.pl "game"
 
 for param in $@
 do
     if [ ${param} != $1 ]
     then
-        sudo bash bbtemplate.sh "${param}"
-        sudo perl createTpl.pl "${param}"
+         bash bbtemplate.sh "${param}"
+         perl createTpl.pl "${param}"
     fi
 done
 
 
-sudo echo "****************************************"
-sudo echo "INSTALLED"
-sudo echo "****************************************"
+ echo "\n****************************************"
+ echo "\nINSTALLED"
+ echo "\n****************************************"
 

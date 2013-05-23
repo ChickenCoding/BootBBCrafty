@@ -1,0 +1,36 @@
+{
+  "name": "gameDevGrunt",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "chickenCode",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.7",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-cssmin": "~0.6.0",
+    "grunt-contrib-imagemin": "~0.1.4",
+    "grunt-contrib-handlebars": "~0.5.8",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-less": "~0.5.0",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-grunticon": "~0.3.1",
+    "grunt-lib-phantomjs": "~0.3.0",
+    "grunt-recess": "~0.3.2",
+    "grunt-webfont": "~0.1.2",
+    "recess": "~1.1.6",
+    "stylus": "~0.32.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-requirejs": "~0.4.0"
+  }
+}
