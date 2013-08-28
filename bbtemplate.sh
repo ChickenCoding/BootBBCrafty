@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-rep=dev/js/
+rep=dev/coffee/
 
 model=model/
 view=view/

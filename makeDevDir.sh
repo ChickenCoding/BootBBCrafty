@@ -64,16 +64,16 @@ echo "get and install the vendors"
 cd ./js/vendor
 echo "install backbone and requirejs"
 echo "****************************************"
-wget  -O backbone.min.js https://raw.github.com/documentcloud/backbone/master/backbone-min.js
+wget  -O backbone.js https://raw.github.com/documentcloud/backbone/master/backbone-min.js
 echo "backbone installed"
 
-ls
 
-wget -O head.min.js "https://raw.github.com/headjs/headjs/master/dist/head.min.js"
+wget  -o require.min.js "https://requirejs.org/docs/release/2.1.8/minified/require.js"
+echo "requirejs installed"
 
 echo "installing undescorejs "
 echo "****************************************"
-wget -O underscore.min.js "underscorejs.org/underscore-min.js"
+wget -O underscore.js "underscorejs.org/underscore-min.js"
 echo "underscore installed"
 
 echo "installing zeptojs (jquery alternative)"
@@ -82,20 +82,15 @@ wget "http://zeptojs.com/zepto.min.js"
 echo "zeptojs installed"
 
 echo "installing craftyjs (2d canvas/dom engine)"
-wget -O crafty.min.js "http://craftyjs.com/release/0.5.3/crafty-min.js"
+wget -O crafty.js "http://craftyjs.com/release/0.5.3/crafty-min.js"
 echo "craftyjs installed"
 
 echo "installing raphaeljs (svg drawing/animating lib)"
-wget -O raphael.min.js "http://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js"
+wget -O raphael.js "http://raw.github.com/DmitryBaranovskiy/raphael/master/raphael-min.js"
 echo "raphaeljs installed"
 cd ..
-ls
 cd ..
-ls
-touch config.js
-touch main.js
-touch router.js
-echo "files config.js, main.js, router.js created (in .dev)"
+
 ls
 
 

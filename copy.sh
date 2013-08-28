@@ -7,11 +7,10 @@ cd $1
  npm install -g grunt-cli grunt
  npm init
 
- touch Gruntfile.js
 
 cd $1
 
- bash makeDevDir.sh
+bash makeDevDir.sh
 bash installGruntModules.sh
 
 cd $1
@@ -25,7 +24,6 @@ do
     if [ ${param} != $1 ]
     then
          bash bbtemplate.sh "${param}"
-         perl createTpl.pl "${param}"
     fi
 done
 
